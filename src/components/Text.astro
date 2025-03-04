@@ -1,0 +1,14 @@
+---
+import * as homeContent from "../content/home-page.content.md";
+import "./style.css";
+---
+
+<section class="home-wrapper">
+  <img
+    class="home-bg-img"
+    src={homeContent.frontmatter.backgroundUrl}
+    alt="bg-image"
+  />
+  <h1 class="home-title">{homeContent.frontmatter.title}</h1>
+  <h2 class="home-description">{homeContent.frontmatter.description}</h2>
+</section>
